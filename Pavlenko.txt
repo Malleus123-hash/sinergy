@@ -1,0 +1,17 @@
+import math
+
+try:
+    user_input = input('Введите неотрицательное целое число: ')
+    number = int(user_input)
+    
+    # Проверка, что число неотрицательное
+    if number < 0:
+        raise ValueError('Число должно быть неотрицательным.')
+    
+    # Вычисление факториала с помощью встроенной функции math.factorial
+    result = math.factorial(number)
+    print(f'Факториал числа {number} равен {result}')
+    
+except ValueError as e:
+    # Обработка ошибок преобразования и проверки
+    print(f'Ошибка: {e}')
