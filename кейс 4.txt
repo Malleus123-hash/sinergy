@@ -32,5 +32,5 @@ def guess_number_game():
     else:
         print(f"К сожалению, вы исчерпали все попытки. Загаданное число было {number_to_guess}.")
 
-if name == "__main__":
+if __name__ == "__main__":
     guess_number_game()
